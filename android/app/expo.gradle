@@ -63,11 +63,11 @@ afterEvaluate {
                 // Set up the call to exp
                 workingDir expoRoot
 
-                if (Os.isFamily(Os.FAMILY_WINDOWS)) {
-                    commandLine("cmd", "/c", ".\\android\\detach-scripts\\run-exp.bat", "bundle-assets", expoRoot, "--platform", "android", "--dest", assetsDir)
-                } else {
-                    commandLine("./android/detach-scripts/run-exp.sh", "bundle-assets", expoRoot, "--platform", "android", "--dest", assetsDir)
-                }
+                // if (Os.isFamily(Os.FAMILY_WINDOWS)) {
+                //     commandLine("cmd", "/c", ".\\android\\detach-scripts\\run-exp.bat", "bundle-assets", expoRoot, "--platform", "android", "--dest", assetsDir)
+                // } else {
+                //     commandLine("./android/detach-scripts/run-exp.sh", "bundle-assets", expoRoot, "--platform", "android", "--dest", assetsDir)
+                // }
 
                 enabled targetName.toLowerCase().contains("release") || targetName.toLowerCase().contains("prod")
             }
