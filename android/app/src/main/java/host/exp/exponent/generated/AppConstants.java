@@ -14,7 +14,7 @@ public class AppConstants {
   public static final String VERSION_NAME = "2.5.3";
   public static String INITIAL_URL = "exp://exp.host/@intech/mobile-intech";
   public static final boolean IS_DETACHED = true;
-  public static final String SHELL_APP_SCHEME = "expef26ab1883e44422b34d7d05e2797700";
+  public static final String SHELL_APP_SCHEME = "exp82227053dd9d4aa7a99d351132fbec7c";
   public static final String RELEASE_CHANNEL = "default";
   public static boolean SHOW_LOADING_VIEW_IN_SHELL_APP = false;
   public static boolean ARE_REMOTE_UPDATES_ENABLED = true;

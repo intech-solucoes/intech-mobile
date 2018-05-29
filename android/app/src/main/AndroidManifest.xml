@@ -56,7 +56,7 @@
       android:screenOrientation="portrait"
       android:theme="@android:style/Theme.Translucent.NoTitleBar">
       <intent-filter>
-        <data android:scheme="expef26ab1883e44422b34d7d05e2797700"/>
+        <data android:scheme="exp82227053dd9d4aa7a99d351132fbec7c"/>
 
         <action android:name="android.intent.action.VIEW"/>
 
