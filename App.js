@@ -1,23 +1,30 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React from "react";
+import { View, KeyboardAvoidingView, StatusBar, Platform, StyleSheet, Toolbar } from "react-native";
+import { createStackNavigator } from "react-navigation";
+import LoginPage from "./pages/LoginPage";
+import PlanosPage from "./pages/PlanosPage";
+import Styles, { Variables } from "./styles";
+
+const RootStack = createStackNavigator({
+    Login: { screen: LoginPage },
+    Planos: { screen: PlanosPage },
+}, {
+    navigationOptions: {
+        headerTintColor: "#fff",
+        headerMode: "screen",
+        headerStyle: {
+            backgroundColor: Variables.colors.primary,
+            height: 56
+        }
+    }
+});
 
 export default class App extends React.Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-        <Text>Changes you make will automatically reload.</Text>
-        <Text>Shake your phone to open the developer menu.</Text>
-      </View>
-    );
-  }
+    render() {
+        return (
+            <KeyboardAvoidingView style={Styles.container} behavior="padding">
+                <RootStack />
+            </KeyboardAvoidingView>
+        );
+    }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
