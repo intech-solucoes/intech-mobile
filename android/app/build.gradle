@@ -90,7 +90,7 @@ android {
 //   }
 // }
 
-apply from: 'expo.gradle'
+//apply from: 'expo.gradle'
 
 dependencies {
     compile project(':appcenter-crashes')
