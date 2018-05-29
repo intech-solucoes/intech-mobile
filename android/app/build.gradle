@@ -91,7 +91,7 @@ android {
 // }
 
 
-apply from: 'expo.gradle'
+//apply from: 'expo.gradle'
 
 
 dependencies {
