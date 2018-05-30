@@ -4,8 +4,8 @@
     "android": {
       "package": "com.intech.app"
     },
-    "name": "mobile-intech",
-    "slug": "mobile-intech",
+    "name": "Intech",
+    "slug": "Intech",
     "version": "0.1.0",
     "isDetached": true,
     "detach": {
