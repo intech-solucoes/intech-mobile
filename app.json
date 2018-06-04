@@ -6,7 +6,7 @@
     },
     "name": "Intech",
     "slug": "mobile-intech",
-    "icon": "./assets/intech-simbolo-large.png",
+    "icon": "icon.png",
     "version": "0.1.0",
     "isDetached": true,
     "detach": {
